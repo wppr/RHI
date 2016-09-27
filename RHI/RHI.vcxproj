@@ -23,6 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>RHI</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>RHITest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -71,6 +72,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\Include\;..\Include\Adreno;..\Source;..\Source\imGUI;..\Source\Engine;..\Source\Engine\pipeline;..\Source\Engine\RHI;..\Source\Engine\OpenglDriver;..\Source\Engine\RenderContext;..\Include\cereal\external</IncludePath>
+    <LibraryPath>..\Lib\;..\Lib\assimp;..\Lib\gles;..\Lib\freeImage;..\Lib\freetype;..\Lib\glfw-lib-vc2015;..\Lib\glew;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;</LibraryPath>
+    <SourcePath>..\Source;..\Source\Engine;..\Source\Engine\pipeline;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -146,6 +150,47 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Source\ContextChoose.h" />
+    <ClInclude Include="..\Source\GLContext.h" />
+    <ClInclude Include="..\Source\GLFWFramework.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGL.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLDrvPrivate.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLES31.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLResources.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLRHI.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLShaderResources.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLState.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLUtil.h" />
+    <ClInclude Include="..\Source\OPENGL_Include.h" />
+    <ClInclude Include="..\Source\PixelFormat.h" />
+    <ClInclude Include="..\Source\RHI\Color.h" />
+    <ClInclude Include="..\Source\RHI\DynamicRHI.h" />
+    <ClInclude Include="..\Source\RHI\RHI.h" />
+    <ClInclude Include="..\Source\RHI\RHIDefinitions.h" />
+    <ClInclude Include="..\Source\RHI\RHIResources.h" />
+    <ClInclude Include="..\Source\RHI\RHIUtilities.h" />
+    <ClInclude Include="..\Source\unreal_defination.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\OpenglRHI\OpengGLDevice.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGL.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLCommands.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLES31.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLIndexBuffer.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLRenderTarget.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLRHI.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLShader.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLState.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLTexture.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLUniformBuffer.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLVertexBuffer.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLVertexDeclaration.cpp" />
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLViewport.cpp" />
+    <ClCompile Include="..\Source\RHI\Color.cpp" />
+    <ClCompile Include="..\Source\RHI\DynamicRHI.cpp" />
+    <ClCompile Include="..\Source\RHI\RHI.cpp" />
+    <ClCompile Include="..\Source\RHI\RHI_test.cpp" />
+    <ClCompile Include="..\Source\RHI_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

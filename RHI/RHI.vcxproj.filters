@@ -1,17 +1,118 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="RHI">
+      <UniqueIdentifier>{4f9b87dc-dece-4da6-8796-cc1bf243fcb5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="openglRHi">
+      <UniqueIdentifier>{a17ead34-93f4-4e91-90e2-275c00c8e392}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\GLFWFramework.h" />
+    <ClInclude Include="..\Source\OPENGL_Include.h" />
+    <ClInclude Include="..\Source\OpenglRHI\OpenGL.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLDrvPrivate.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLES31.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLResources.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLRHI.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLShaderResources.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLState.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\OpenglRHI\OpenGLUtil.h">
+      <Filter>openglRHi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RHI\Color.h">
+      <Filter>RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RHI\DynamicRHI.h">
+      <Filter>RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RHI\RHI.h">
+      <Filter>RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RHI\RHIDefinitions.h">
+      <Filter>RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RHI\RHIResources.h">
+      <Filter>RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RHI\RHIUtilities.h">
+      <Filter>RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PixelFormat.h" />
+    <ClInclude Include="..\Source\unreal_defination.h" />
+    <ClInclude Include="..\Source\GLContext.h" />
+    <ClInclude Include="..\Source\ContextChoose.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLViewport.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpengGLDevice.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGL.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLCommands.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLES31.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLIndexBuffer.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLRenderTarget.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLRHI.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLShader.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLState.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLTexture.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLUniformBuffer.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLVertexBuffer.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\OpenglRHI\OpenGLVertexDeclaration.cpp">
+      <Filter>openglRHi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RHI\Color.cpp">
+      <Filter>RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RHI\DynamicRHI.cpp">
+      <Filter>RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RHI\RHI.cpp">
+      <Filter>RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RHI\RHI_test.cpp">
+      <Filter>RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RHI_test.cpp" />
   </ItemGroup>
 </Project>
