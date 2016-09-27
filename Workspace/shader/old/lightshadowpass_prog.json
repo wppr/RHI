@@ -1,0 +1,40 @@
+{
+    "name":"lightshadowpass program",
+    
+        "shaderTypes":{"vertex shader":"true",
+                    "fragment shader":"true"} ,
+    
+    "vertex shader":{
+        "name":"lightshadowpassvs",
+        "src":"shader/wpp/es3/lightshadowpass.vs"
+        },
+    
+    "fragment shader":{
+        "name":"lightshadowpassfs",
+        "src":"shader/wpp/es3/lightshadowpass.fs"
+    },
+    
+    "input":{
+        "uniform":{
+            "WorldMatrix":"GVS_WORLD_MATRIX",
+            "eyepos": "GVS_CAMERA_POSITION",
+            "InverseViewProject":"GVS_INVERSE_VIEW_PROJECTION_MATRIX",
+            "g_diffuse": "GVS_MANUAL_PARA",      
+            "g_normal": "GVS_MANUAL_PARA",
+            "g_specular": "GVS_MANUAL_PARA",
+            "g_normal2": "GVS_MANUAL_PARA",
+            "g_depth": "GVS_MANUAL_PARA",
+            "ShadowMap": "GVS_MANUAL_PARA"
+
+        },
+        "attribute":{
+            "vPosition":"POSITION0",
+            "vNormal":"NORMAL0",
+            "vTexcoord":"TEXCOORD0"
+        }
+    },
+    "output":{
+        
+    }
+
+}

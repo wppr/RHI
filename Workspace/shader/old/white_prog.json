@@ -1,0 +1,40 @@
+{
+    "name":"white program",
+    
+        "shaderTypes":{"vertex shader":"true",
+                    "fragment shader":"true"} ,
+    
+    "vertex shader":{
+        "name":"whitevs",
+        "src":"shader/wpp/es3/white.vs"
+        },
+    
+    "fragment shader":{
+        "name":"whitefs",
+        "src":"shader/wpp/es3/white.fs"
+    },
+    
+    "input":{
+        "uniform":{
+            "WorldMatrix":"GVS_WORLD_MATRIX",
+            "eyepos": "GVS_CAMERA_POSITION",
+            "InverseViewProject":"GVS_INVERSE_VIEW_PROJECTION_MATRIX",
+            "g_diffuse": "GVS_MANUAL_PARA",      
+            "g_normal": "GVS_MANUAL_PARA",
+            "g_specular": "GVS_MANUAL_PARA",
+            "g_normal2": "GVS_MANUAL_PARA",
+            "g_depth": "GVS_MANUAL_PARA"
+
+
+        },
+        "attribute":{
+            "vPosition":"POSITION0",
+            "vNormal":"NORMAL0",
+            "vTexcoord":"TEXCOORD0"
+        }
+    },
+    "output":{
+        
+    }
+
+}

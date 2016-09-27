@@ -1,0 +1,56 @@
+{
+    "name": "SimpleRender pass",
+    "GLShader": {
+        "vertex shader": {
+            "name": "SimpleRendervs",
+            "path": "SimpleRender.vs"
+        },
+        "fragment shader": {
+            "name": "SimpleRenderfs",
+            "path": "SimpleRender.fs"
+        }
+    },
+
+    "input": {
+        "uniform": {
+            "WorldMatrix": "GVS_WORLD_MATRIX",
+            "Projection": "GVS_PROJECTION_MATRIX",
+            "eyepos": "GVS_CAMERA_POSITION",
+            "ViewMatrix": "GVS_VIEW_MATRIX",
+            "NormalMap":"GVS_TEXTURE_NORMAL",
+            "diffuse_texture": "GVS_TEXTURE_DIFFUSE",
+            "diffuse_color": "GVS_MATERIAL_DIFFUSE",
+            "ambient_texture": "GVS_TEXTURE_AMBIENT",
+            "ambient_color": "GVS_MATERIAL_AMBIENT",
+            "specular_texture": "GVS_TEXTURE_SPECULAR",
+            "specular_color": "GVS_MATERIAL_SPECULAR"
+        },
+        "attribute": {
+            "vPositon": {
+                "type": "vec3",
+                "semantic": "POSITION",
+                "index": 0
+            },
+            "vNormal": {
+                "type": "vec3",
+                "semantic": "NORMAL",
+                "index": 1
+            },
+            "vTexcoord": {
+                "type": "vec2",
+                "semantic": "TEXCOORD",
+                "index": 2
+            },
+            "vTangent": {
+                "type": "vec3",
+                "semantic": "TANGENT",
+                "index": 3
+            },
+            "vTangent": {
+                "type": "vec3",
+                "semantic": "BITANGENT",
+                "index": 4
+            }
+        }
+    }
+}

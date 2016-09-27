@@ -1,0 +1,40 @@
+{
+    "name":"forward program",
+    
+    "shaderTypes":{"vertex shader":"true",
+                    "fragment shader":"true"} ,
+    
+    "vertex shader":{
+        "name":"forwardvs",
+        "src":"shader/wpp/es3/forward.vs"
+        },
+    
+    "fragment shader":{
+        "name":"forwardfs",
+        "src":"shader/wpp/es3/forward.fs"
+    },
+    
+    "input":{
+        "uniform":{
+            "WorldMatrix":"GVS_WORLD_MATRIX",
+            "eyepos": "GVS_CAMERA_POSITION",
+            "Projection":"GVS_PROJECTION_MATRIX",
+            "ViewMatrix":"GVS_VIEW_MATRIX",
+            "diffuse_texture": "GVS_TEXTURE_DIFFUSE",
+            "diffuse_color": "GVS_MATERIAL_DIFFUSE",
+            "ambient_texture": "GVS_TEXTURE_AMBIENT",
+            "ambient_color": "GVS_MATERIAL_AMBIENT",
+            "specular_texture": "GVS_TEXTURE_SPECULAR",
+            "specular_color": "GVS_MATERIAL_SPECULAR"    
+        },
+        "attribute":{
+            "vPosition":"POSITION0",
+            "vNormal":"NORMAL0",
+            "vTexcoord":"TEXCOORD0"
+        }
+    },
+    "output":{
+        
+    }
+
+}

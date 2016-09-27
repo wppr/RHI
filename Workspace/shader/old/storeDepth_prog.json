@@ -1,0 +1,31 @@
+{
+    "name":"storeDepth program",
+    
+    "shaderTypes":{"vertex shader":"true",
+                    "fragment shader":"true"} ,
+    
+    "vertex shader":{
+        "name":"storeDepthvs",
+        "src":"shader/wpp/es3/storeDepth.vs"
+        },
+    
+    "fragment shader":{
+        "name":"storeDepthfs",
+        "src":"shader/wpp/es3/storeDepth.fs"
+    },
+    
+    "input":{
+        "uniform":{
+            "WorldMatrix":"GVS_WORLD_MATRIX",
+            "Projection":"GVS_PROJECTION_MATRIX",
+            "ViewMatrix":"GVS_VIEW_MATRIX"
+        },
+        "attribute":{
+            "vPosition":"POSITION0"
+        }
+    },
+    "output":{
+        
+    }
+
+}
