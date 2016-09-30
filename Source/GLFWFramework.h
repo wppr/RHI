@@ -47,15 +47,8 @@ public:
 		}
 		glfwMakeContextCurrent(window);
 		hwnd = glfwGetWin32Window(window);
-#ifdef USE_OPENGL_CONTEXT
 		GLContext Context;
 		Context.Init();
-#endif
-
-#ifdef USE_OPENGL_ES_CONTEXT
-		WinEGLContext Context;
-		Context.Init(hwnd);
-#endif
 
 		glfwSwapInterval(0);
 	}

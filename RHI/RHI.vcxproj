@@ -73,7 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\Source\OpenglRHI;..\Source\RHI\;$(VC_IncludePath);$(WindowsSDK_IncludePath);..\Include\;..\Source;..\Include\cereal\external</IncludePath>
-    <LibraryPath>..\Lib\;..\Lib\assimp;..\Lib\gles;..\Lib\freeImage;..\Lib\freetype;..\Lib\glfw-lib-vc2015;..\Lib\glew;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;</LibraryPath>
+    <LibraryPath>..\Lib\;..\Lib\glfw-lib-vc2015;..\Lib\glew;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;</LibraryPath>
     <SourcePath>..\Source\RHI\;..\Source\;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
