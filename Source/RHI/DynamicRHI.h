@@ -1,5 +1,5 @@
 #pragma once
-#include "PreDefine.h"
+//#include "PreDefine.h"
 #include "unreal_defination.h"
 #include "RHIResources.h"
 #include "RHI.h"

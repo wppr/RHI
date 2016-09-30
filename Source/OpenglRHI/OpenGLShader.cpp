@@ -2,7 +2,6 @@
 #include <memory>
 using namespace std;
 #include "Logger.h"
-using namespace HW;
 #include "OpenGLShaderResources.h"
 
 

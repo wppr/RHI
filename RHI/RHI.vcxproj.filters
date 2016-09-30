@@ -57,6 +57,7 @@
     <ClInclude Include="..\Source\unreal_defination.h" />
     <ClInclude Include="..\Source\GLContext.h" />
     <ClInclude Include="..\Source\ContextChoose.h" />
+    <ClInclude Include="..\Source\Logger.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\OpenglRHI\OpenGLViewport.cpp">
@@ -110,9 +111,6 @@
     <ClCompile Include="..\Source\RHI\RHI.cpp">
       <Filter>RHI</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\RHI\RHI_test.cpp">
-      <Filter>RHI</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\RHI_test.cpp" />
+    <ClCompile Include="..\Source\Logger.cpp" />
   </ItemGroup>
 </Project>
