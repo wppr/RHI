@@ -112,5 +112,6 @@
       <Filter>RHI</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Logger.cpp" />
+    <ClCompile Include="..\Source\main.cpp" />
   </ItemGroup>
 </Project>

@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Logger.cpp" />
+    <ClCompile Include="..\Source\main.cpp" />
     <ClCompile Include="..\Source\OpenglRHI\OpengGLDevice.cpp" />
     <ClCompile Include="..\Source\OpenglRHI\OpenGL.cpp" />
     <ClCompile Include="..\Source\OpenglRHI\OpenGLCommands.cpp" />
